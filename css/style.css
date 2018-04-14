@@ -1,19 +1,20 @@
 #wrapper {
-    width: 1600px;
+    width: 800px;
+    margin: 0 auto;
 }
 header {
     box-sizing: border-box;
-    padding: 90px 215px 0;
-    height: 1027px;
+    padding: 45px 108px 0;
+    height: 514px;
     background-image: url("../images/header-bg.png");
 }
 .logo::before {
     content: url("../images/logo.png");
 }
 .menu {
-    width: 59px;
-    height: 59px;
-    border: 3px solid #d2d3d8;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #d2d3d8;
     background-color: transparent;
     background-image: url("../images/bt-bg.png");
     background-repeat: no-repeat;
@@ -26,6 +27,6 @@ header {
 }
 .initials h1 {
     font-family: Raleway-Heavy;
-    font-size: 65px;
+    font-size: 33px;
     color: #fff;
 }
