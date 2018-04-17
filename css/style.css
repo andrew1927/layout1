@@ -1,3 +1,6 @@
+body {
+    background-color: #282828;
+}
 #wrapper {
     width: 800px;
     margin: 0 auto;
@@ -202,5 +205,59 @@ header .flex-container {
     border:none;
     background:#aab2be;
     height:1px;
+}
+/*works*/
+.works {
+    text-align: center;
+    font-family: Raleway;
+    height: 474px;
+    background-color: #fff;
+    padding-bottom: 62px;
+    padding-top: 58px;
+}
+.works h2 {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 26px;
+}
+.works p {
+    font-family: Roboto;
+    font-size: 8px;
+    font-weight: 500;
+    color: #737373;
+    margin-bottom: 19px;
+}
+.works .flex-container {
+    background-color: #f1f1f1;
+    width: auto;
+    height: 275px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.works div {
+    width: 140px;
+    height: 134px;
+    background-color: #10c6fc;
+}
+.works div:nth-child(5) {
+    width: 288px;
+    background-color: #835aeb;
+}
+.works div:first-child {
+    background-color: #10c6fc;
+}
+.works div:nth-child(2) {
+    background-color: #835aeb;
+}
+.works .flex-container div:nth-child(3),
+.works div:nth-child(6) {
+   background-color: #002453;
+}
+.works div:nth-child(4),
+.works div:nth-child(7)
+{
+    background-color: #ff2b4a;
 }
 
