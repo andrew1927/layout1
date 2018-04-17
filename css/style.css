@@ -106,7 +106,8 @@ header .flex-container {
     font-weight: 700;
     font-size: 20px;
 }
-.process .flex-container {
+.process .flex-container,
+.experience .flex-container {
     width: auto;
     display: flex;
     justify-content: space-between;
@@ -153,5 +154,53 @@ header .flex-container {
 .process button span {
     display: block;
     margin-top: 50px;
+}
+/*experience*/
+.experience {
+    height: 398px;
+    background-image: url("../images/header-bg.png");
+    background-size: cover;
+    padding-bottom: 62px;
+    padding-top: 58px;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 8px;
+}
+.work,
+.education {
+    box-sizing: border-box;
+    padding: 30px 20px;
+    width: 288px;
+    height: 272px;
+    background-image: url("../images/work-bg.png");
+    background-size: cover;
+}
+.experience h2 {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 33px;
+}
+.experience h3 {
+    font-size: 9px;
+    font-weight: 700;
+    color: #f2f2f4;
+    margin-bottom: 10px;
+}
+.experience h4 {
+    font-weight: 500;
+    color: #d6d8dd;
+    margin-bottom: 10px;
+}
+.experience p {
+    color: #aab2be;
+    line-height: 1.5em;
+}
+.experience hr {
+    border:none;
+    background:#aab2be;
+    height:1px;
 }
 
