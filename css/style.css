@@ -260,4 +260,48 @@ header .flex-container {
 {
     background-color: #ff2b4a;
 }
+/*clients-quote*/
+.clients-quote {
+    font-family: Roboto;
+    padding-top: 66px;
+    padding-bottom: 71px;
+    height: 351px;
+    background-color: #64cbc0;
+}
+.clients-quote .quote {
+    width: 30px;
+    height: 30px;
+    background-image: url("../images/quote-bg.png");
+    background-repeat: no-repeat;
+    background-size: 30px;
+    margin-bottom: 18px;
+}
+.clients-quote p:nth-child(2) {
+    font-weight: 400;
+    font-size: 8px;
+    width: 233px;
+    color: #234642;
+    line-height: 1.6em;
+    margin-bottom: 26px;
+}
+.clients-quote .signature {
+    width: 85px;
+    height: 33px;
+    background-image: url("../images/signature-bg.png");
+    background-repeat: no-repeat;
+    background-size: 85px;
+    margin-bottom: 15px;
+}
+.clients-quote p:nth-child(4) {
+    font-size: 9px;
+    color: #2d5b56;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.clients-quote p:nth-child(5) {
+    font-size: 7px;
+    color: #2d5b56;
+    font-weight: 400;
+}
+
 
