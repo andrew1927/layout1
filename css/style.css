@@ -4,7 +4,8 @@
 }
 #wrapper > * {
     box-sizing: border-box;
-    padding: 0 108px;
+    padding-left: 108px;
+    padding-right: 108px;
 }
 /*header*/
 #wrapper > header {
@@ -29,7 +30,7 @@
     background-size: 15px 15px;
     background-position: center;
 }
-.flex-container {
+header .flex-container {
     display: flex;
     justify-content: space-between;
 }
@@ -93,7 +94,64 @@
 }
     /*process*/
 .process {
+    padding-bottom: 62px;
+    padding-top: 58px;
+    font-family: Raleway;
+    font-size: 8px;
     height: 334px;
     background-color: #f6f6f6;
+}
+.process h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+}
+.process .flex-container {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.process button {
+    font-size: 8px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    width: 142px;
+    height: 135px;
+}
+.process p {
+    font-family: Roboto;
+    font-weight: 500;
+    text-align: center;
+    margin: 21px 0 21px;
+}
+.design,
+.development,
+.testing,
+.launch {
+    background-repeat: no-repeat;
+    background-position: center 50px;
+    background-size: 20px;
+}
+.design {
+    background-image: url("../images/design-bg.png");
+    background-color: #10c6fc;
+}
+.development {
+    background-image: url("../images/development-bg.png");
+    background-color: #835aeb;
+}
+.testing {
+    background-image: url("../images/testing-bg.png");
+    background-color: #002453;
+}
+.launch {
+    background-image: url("../images/launch-bg.png");
+    background-color: #ff2b4a;
+}
+.process button span {
+    display: block;
+    margin-top: 50px;
 }
 
