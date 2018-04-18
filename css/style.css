@@ -85,7 +85,8 @@ header .flex-container {
 .about article p {
     margin-top: 20px;
 }
-.about article button {
+.about .hire-me,
+.contact .hire-me {
     border: none;
     width: 102px;
     height: 23px;
@@ -302,6 +303,75 @@ header .flex-container {
     font-size: 7px;
     color: #2d5b56;
     font-weight: 400;
+}
+/*contact*/
+.contact {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 8px;
+    color: #949fad;
+    height: 489px;
+    background-image: url("../images/header-bg.png");
+    background-size: cover;
+    padding-top: 62px;
+    padding-bottom: 62px;
+}
+.contact .flex-container {
+    display: flex;
+    height: 365px;
+    width: auto;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.contact .flex-container div {
+    padding: 28px 20px;
+    box-sizing: border-box;
+    background-image: url("../images/work-bg.png");
+    background-size: cover;
+    height: 115px;
+    width: 288px;
+}
+.contact .flex-container .message {
+    height: 365px;
+}
+.contact h2 {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 13px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 19px;
+}
+.message h2 {
+    margin-bottom: 29px;
+}
+.contact p {
+    line-height: 1.5em;
+}
+.contact input,
+.contact textarea {
+    padding-left: 7px;
+    border: 1px solid #c2c1cb;
+    background: transparent;
+    box-sizing: border-box;
+    width: 247px;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 8px;
+    margin-bottom: 13px;
+    color: #c2c1cb
+}
+.contact input {
+    height: 25px;
+}
+.contact textarea {
+    padding-top: 8px;
+    height: 103px;
+}
+.contact .hire-me {
+    margin-top: 7px;
+    margin-left: 145px;
 }
 
 
