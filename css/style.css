@@ -373,5 +373,45 @@ header .flex-container {
     margin-top: 7px;
     margin-left: 145px;
 }
-
+/*footer*/
+footer {
+    font-family: Roboto;
+    font-weight: 400;
+    text-align: center;
+    color: #8b8b8b;
+    font-size: 6px;
+    height: 86px;
+    background: #222;
+    padding-top: 31px;
+    padding-bottom: 31px;
+}
+footer button {
+    box-sizing: content-box;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position: bottom;
+    border: none;
+    width: 10px;
+    height: 10px;
+    padding: 0 5px;
+}
+footer .container button:first-child {
+    background-image: url("../images/tw-bg.png");
+    border-right: 1px solid #8b8b8b;
+}
+footer .container button:nth-child(2) {
+    background-image: url("../images/in-bg.png");
+    border-right: 1px solid #8b8b8b;
+}
+footer .container button:nth-child(3) {
+    background-image: url("../images/be-bg.png");
+    border-right: 1px solid #8b8b8b;
+}
+footer .container button:nth-child(4){
+    background-image: url("../images/al-bg.png");
+}
+footer p {
+    margin-top: 10px;
+}
 
