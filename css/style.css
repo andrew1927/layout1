@@ -1,51 +1,72 @@
 body {
     background-color: #282828;
 }
-#wrapper {
+.wrapper {
     width: 800px;
     margin: 0 auto;
 }
-#wrapper > * {
+.wrapper > * {
     box-sizing: border-box;
-    padding-left: 108px;
-    padding-right: 108px;
+}
+header,
+.about,
+.span-container,
+.flex-container,
+.experience,
+.contact,
+footer{
+    display: flex;
+}
+header,
+.about,
+.experience,
+.contact,
+footer {
+    justify-content: center;
+    align-items: center;
+}
+.process .flex-container,
+.experience .flex-container,
+.works .flex-container,
+.contact .flex-container {
+    justify-content: space-between;
+}
+.process, .works {
+    padding: 58px 108px 0;
 }
 /*header*/
-#wrapper > header {
-    padding-top: 45px;
+header {
+    position: relative;
     height: 514px;
     background-image: url("../images/header-bg.png");
     background-size: cover;
+}
+.logo, .menu {
+    position: absolute;
+    top: 45px;
 }
 .logo {
     width: 19px;
     height: 25px;
     background-image: url("../images/logo.png");
     background-size: 19px 26px;
+    left: 108px;
 }
 .menu {
     width: 30px;
     height: 30px;
     border: 2px solid #d2d3d8;
-    background-color: transparent;
-    background-image: url("../images/btn-bg.png");
-    background-repeat: no-repeat;
+    background: url("../images/btn-bg.png") no-repeat center transparent;
     background-size: 15px 15px;
-    background-position: center;
-}
-header .flex-container {
-    display: flex;
-    justify-content: space-between;
+    right: 108px;
 }
 .initials-container {
     width: 274px;
-    margin: 140px auto 0;
+    height: 80px;
 }
 .initials-container h1 {
-    padding: 15px 0;
-    margin-bottom: 14px;
-    font-family: Raleway;
-    font-size: 33px;
+    padding: 8px 0;
+    font: 900 33px Raleway;
     letter-spacing: 5px;
     text-align: center;
     color: #fff;
@@ -53,91 +74,75 @@ header .flex-container {
     border-bottom: 2px solid #99b4be;
 }
 .initials-container span {
-    font-family: Roboto-Regular;
-    font-size: 13px;
+    font: 400 12px Roboto;
     color: #ced8dd
 }
 .span-container {
-    display: flex;
     justify-content: space-between;
+    margin-top: 10px;
 }
-
 /*about*/
-#wrapper > .about {
-    padding: 82px 108px 75px 360px;
+.about {
     height: 351px;
-    background-image: url("../images/about-bg.png");
-    background-size: 210px 300px;
-    background-repeat: no-repeat;
-    background-position: 108px 59px;
     background-color: #fff;
 }
+.about img {
+    width: 216px;
+    height: 292px;
+    margin: 59px 49px 0 0;
+}
 .about article {
-    line-height: 1.8em;
-    font-size: 8px;
-    font-family: Roboto;
+    width: 330px;
+    height: 197px;
+    padding-top: 13px;
+    font: 400 8px/15px  Roboto;
 }
-.about article h2 {
-    font-size: 9px;
-    font-weight: 700;
+.about article p:first-child {
+    font: 700 9px Roboto;
 }
-
-.about article p {
+.about article p:nth-of-type(2) {
     margin-top: 20px;
+}
+.about article p:nth-of-type(3) {
+    margin-top: 26px;
 }
 .about .hire-me,
 .contact .hire-me {
     border: none;
     width: 102px;
     height: 23px;
-    font-weight: 500;
-    font-size: 8px;
+    font: 500 8px Roboto;
     color: #fff;
     background-color: #ff2b4a;
-    margin-top: 32px;
+    margin-top: 29px;
 }
     /*process*/
 .process {
-    padding-bottom: 62px;
-    padding-top: 58px;
-    font-family: Raleway;
-    font-size: 8px;
+    font: 700 8px Raleway;
     height: 334px;
     background-color: #f6f6f6;
 }
 .process h2 {
     text-align: center;
-    font-weight: 700;
-    font-size: 20px;
+    font: 700 20px Raleway;
 }
-.process .flex-container,
-.experience .flex-container {
-    width: auto;
-    display: flex;
-    justify-content: space-between;
+.process .flex-container {
+    margin-top: 30px;
 }
-.process button {
-    font-size: 8px;
-    color: #fff;
-    font-weight: 700;
-    text-transform: uppercase;
-    border: none;
+.process .flex-container > div {
     width: 142px;
     height: 135px;
-}
-.process p {
-    font-family: Roboto;
-    font-weight: 500;
-    text-align: center;
-    margin: 21px 0 21px;
-}
-.design,
-.development,
-.testing,
-.launch {
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
     background-repeat: no-repeat;
     background-position: center 50px;
     background-size: 20px;
+}
+.process p {
+    font: 500 8px Roboto;
+    text-align: center;
+    margin-top: 15px;
 }
 .design {
     background-image: url("../images/design-bg.png");
@@ -155,86 +160,81 @@ header .flex-container {
     background-image: url("../images/launch-bg.png");
     background-color: #ff2b4a;
 }
-.process button span {
+.process div > span {
     display: block;
-    margin-top: 50px;
+    text-align: center;
+    margin-top: 85px;
 }
 /*experience*/
 .experience {
     height: 398px;
     background-image: url("../images/header-bg.png");
     background-size: cover;
-    padding-bottom: 62px;
-    padding-top: 58px;
-    font-family: Roboto;
-    font-weight: 400;
-    font-size: 8px;
+    font:400 8px/15px Roboto;
+}
+.experience .work {
+    margin-right: 10px;
 }
 .work,
 .education {
     box-sizing: border-box;
-    padding: 30px 20px;
+    padding: 30px 20px 0;
     width: 288px;
     height: 272px;
     background-image: url("../images/work-bg.png");
     background-size: cover;
-}
-.experience h2 {
-    font-family: Raleway;
-    font-weight: 700;
-    font-size: 13px;
-    text-transform: uppercase;
-    color: #fff;
-    margin-bottom: 33px;
+    font: 400 8px Roboto;
+    color: #aab2be;
 }
 .experience h3 {
-    font-size: 9px;
-    font-weight: 700;
-    color: #f2f2f4;
-    margin-bottom: 10px;
+    font: 700 13px Raleway;
+    text-transform: uppercase;
+    color: #fff;
 }
-.experience h4 {
+.experience p:nth-of-type(1),
+.experience p:nth-of-type(4){
+    font: 700 9px Roboto;
+    color: #f2f2f4;
+    margin-top: 15px;
+}
+.experience p:nth-of-type(1){
+    margin-top: 25px;
+}
+.experience p:nth-of-type(2),
+.experience p:nth-of-type(5){
     font-weight: 500;
     color: #d6d8dd;
-    margin-bottom: 10px;
+    margin-top: 8px;
 }
-.experience p {
-    color: #aab2be;
-    line-height: 1.5em;
+.experience p:nth-of-type(3),
+.experience p:nth-of-type(6) {
+    margin-top: 6px;
 }
-.experience hr {
-    border:none;
-    background:#aab2be;
-    height:1px;
+.experience p:nth-of-type(3) {
+    padding-bottom: 16px;
+    border-bottom:1px solid #aab2be;
 }
 /*works*/
 .works {
+    padding-top: 55px;
     text-align: center;
-    font-family: Raleway;
     height: 474px;
     background-color: #fff;
-    padding-bottom: 62px;
-    padding-top: 58px;
 }
 .works h2 {
-    font-weight: 700;
-    font-size: 20px;
-    margin-bottom: 26px;
+    font: 700 20px Raleway;
 }
 .works p {
-    font-family: Roboto;
-    font-size: 8px;
-    font-weight: 500;
+    font: 500 8px Roboto;
     color: #737373;
-    margin-bottom: 19px;
+    margin-top: 25px;
 }
 .works .flex-container {
+    margin-top: 20px;
     background-color: #f1f1f1;
     width: auto;
     height: 275px;
-    display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
     align-content: space-between;
 }
 .works div {
@@ -263,69 +263,55 @@ header .flex-container {
 }
 /*clients-quote*/
 .clients-quote {
-    font-family: Roboto;
-    padding-top: 66px;
-    padding-bottom: 71px;
+    padding: 66px 0 0 108px;
     height: 351px;
     background-color: #64cbc0;
 }
 .clients-quote .quote {
     width: 30px;
     height: 30px;
-    background-image: url("../images/quote-bg.png");
-    background-repeat: no-repeat;
+    background: url("../images/quote-bg.png") no-repeat;
     background-size: 30px;
-    margin-bottom: 18px;
 }
 .clients-quote p:nth-child(2) {
-    font-weight: 400;
-    font-size: 8px;
+    font: 400 8px/15px Roboto;
     width: 233px;
     color: #234642;
-    line-height: 1.6em;
-    margin-bottom: 26px;
+    margin-top: 18px;
 }
 .clients-quote .signature {
     width: 85px;
     height: 33px;
-    background-image: url("../images/signature-bg.png");
-    background-repeat: no-repeat;
+    background: url("../images/signature-bg.png") no-repeat;
     background-size: 85px;
-    margin-bottom: 15px;
+    margin-top: 21px;
 }
 .clients-quote p:nth-child(4) {
-    font-size: 9px;
+    margin-top: 14px;
+    font: 700 9px Roboto;
     color: #2d5b56;
-    font-weight: 700;
-    margin-bottom: 8px;
 }
 .clients-quote p:nth-child(5) {
+    margin-top: 7px;
     font-size: 7px;
     color: #2d5b56;
-    font-weight: 400;
 }
 /*contact*/
 .contact {
-    font-family: Roboto;
-    font-weight: 400;
-    font-size: 8px;
-    color: #949fad;
+    font: 400 8px/15px Roboto;
+    color: #d4d7dc;
     height: 489px;
-    background-image: url("../images/header-bg.png");
+    background: url("../images/header-bg.png");
     background-size: cover;
-    padding-top: 62px;
-    padding-bottom: 62px;
 }
 .contact .flex-container {
-    display: flex;
     height: 365px;
-    width: auto;
+    width: 586px;
     flex-flow: column wrap;
-    justify-content: space-between;
     align-content: space-between;
 }
 .contact .flex-container div {
-    padding: 28px 20px;
+    padding: 28px 20px 0;
     box-sizing: border-box;
     background-image: url("../images/work-bg.png");
     background-size: cover;
@@ -335,19 +321,10 @@ header .flex-container {
 .contact .flex-container .message {
     height: 365px;
 }
-.contact h2 {
-    font-family: Raleway;
-    font-weight: 700;
-    font-size: 13px;
+.contact h3 {
+    font: 700 13px Raleway;
     color: #fff;
     text-transform: uppercase;
-    margin-bottom: 19px;
-}
-.message h2 {
-    margin-bottom: 29px;
-}
-.contact p {
-    line-height: 1.5em;
 }
 .contact input,
 .contact textarea {
@@ -356,36 +333,36 @@ header .flex-container {
     background: transparent;
     box-sizing: border-box;
     width: 247px;
-    font-family: Roboto;
-    font-weight: 400;
-    font-size: 8px;
-    margin-bottom: 13px;
+    font: 400 8px Roboto;
     color: #c2c1cb
 }
+.contact input:first-child {
+    margin-top: 30px;
+}
 .contact input {
+    margin-top: 14px;
     height: 25px;
 }
 .contact textarea {
+    margin-top: 13px;
     padding-top: 8px;
     height: 103px;
 }
 .contact .hire-me {
-    margin-top: 7px;
-    margin-left: 145px;
+    margin: 13px 0 0 146px;
+}
+.address p:nth-child(2), .phone p:nth-child(2), .web p:nth-child(2) {
+    margin-top: 17px;
 }
 /*footer*/
 footer {
-    font-family: Roboto;
-    font-weight: 400;
+    font: 400 6px Roboto;
     text-align: center;
     color: #8b8b8b;
-    font-size: 6px;
     height: 86px;
     background: #222;
-    padding-top: 31px;
-    padding-bottom: 31px;
 }
-footer button {
+footer li {
     box-sizing: content-box;
     background-color: transparent;
     background-repeat: no-repeat;
@@ -396,19 +373,19 @@ footer button {
     height: 10px;
     padding: 0 5px;
 }
-footer .container button:first-child {
+footer .container li:first-child {
     background-image: url("../images/tw-bg.png");
     border-right: 1px solid #8b8b8b;
 }
-footer .container button:nth-child(2) {
+footer .container li:nth-child(2) {
     background-image: url("../images/in-bg.png");
     border-right: 1px solid #8b8b8b;
 }
-footer .container button:nth-child(3) {
+footer .container li:nth-child(3) {
     background-image: url("../images/be-bg.png");
     border-right: 1px solid #8b8b8b;
 }
-footer .container button:nth-child(4){
+footer .container li:nth-child(4){
     background-image: url("../images/al-bg.png");
 }
 footer p {

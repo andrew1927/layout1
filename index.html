@@ -8,12 +8,10 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div id="wrapper">
+    <div class="wrapper">
         <header>
-            <div class="flex-container">
-                <div class="logo"></div>
-                <button class="menu"></button>
-            </div>
+            <div class="logo"></div>
+            <button class="menu"></button>
             <div class="initials-container">
                 <h1>PAUL LAPKIN</h1>
                 <div class="span-container">
@@ -24,49 +22,46 @@
             </div>
         </header>
         <section class="about">
+            <img src="images/about-bg.png" alt="man">
             <article>
-                <h2>Hi, i’m Paul Lapkin, Experience Crafter from Canada.</h2>
+                <p>Hi, i’m Paul Lapkin, Experience Crafter from Canada.</p>
                 <p>
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquipex ea commodo consequat.
                 </p>
                 <p>
                     Duis autem vel eum iriure dolorin hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore.
                 </p>
-                <button>Hire Me!</button>
+                <button class="hire-me">Hire Me!</button>
             </article>
         </section>
         <section class="process">
             <h2>My Working Process</h2>
             <p>Hi, i’m Paul Lapkin, Experience Crafter from Canada.</p>
             <div class="flex-container">
-                <button class="design"><span>design</span></button>
-                <button class="development"><span>development</span></button>
-                <button class="testing"><span>testing</span></button>
-                <button class="launch"><span>launch</span></button>
+                <div class="design"><span>design</span></div>
+                <div class="development"><span>development</span></div>
+                <div class="testing"><span>testing</span></div>
+                <div class="launch"><span>launch</span></div>
             </div>
         </section>
         <section class="experience">
-            <div class="flex-container">
-                <div class="work">
-                    <h2>Work Experience</h2>
-                    <h3>Mad Max Design</h3>
-                    <h4>OCT 2013 - june 2014</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                    <hr>
-                    <h3>Crazy Design</h3>
-                    <h4>OCT 2014 - june 2015</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                </div>
-                <div class="education">
-                    <h2>Education</h2>
-                    <h3>Maddison University</h3>
-                    <h4>OCT 2013 - june 2014</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                    <hr>
-                    <h3>Max Design & Art Institute</h3>
-                    <h4>OCT 2014 - Present</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                </div>
+            <div class="work">
+                <h3>Work Experience</h3>
+                <p>Mad Max Design</p>
+                <p>OCT 2013 - june 2014</p>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                <p>Crazy Design</p>
+                <p>OCT 2014 - june 2015</p>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            </div>
+            <div class="education">
+                <h3>Education</h3>
+                <p>Maddison University</p>
+                <p>OCT 2013 - june 2014</p>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                <p>Max Design & Art Institute</p>
+                <p>OCT 2014 - Present</p>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
             </div>
         </section>
         <section class="works">
@@ -92,7 +87,7 @@
         <section class="contact">
             <div class="flex-container">
                 <div class="message">
-                    <h2>Leave a message</h2>
+                    <h3>Leave a message</h3>
                     <form action="">
                         <input type="text" name="name" value="Name*">
                         <input type="text" name="email" value="Email*">
@@ -102,29 +97,31 @@
                     </form>
                 </div>
                 <div class="address">
-                    <h2>Address</h2>
+                    <h3>Address</h3>
                     <p>Gulshan Sales Office. SA Tower (Level-5), Plot#1, Road#134, Block SE(A), Gulshan-1, Dhaka 1212.</p>
                 </div>
                 <div class="phone">
-                    <h2>Phone</h2>
+                    <h3>Phone</h3>
                     <p>+880 174 037 6995</p>
                     <p>+880 191 448 6969</p>
                 </div>
                 <div class="web">
-                    <h2>Web</h2>
+                    <h3>Web</h3>
                     <p>Mail: quicksayed@gmail.com</p>
                     <p>Website: dribbble.com/alisayed</p>
                 </div>
             </div>
         </section>
         <footer>
-            <div class="container">
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
+            <div class="flex-container">
+                <ul>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                </ul>
+                <p>Copyright: Ali Sayed, All Rights Reserved.</p>
             </div>
-            <p>Copyright: Ali Sayed, All Rights Reserved.</p>
         </footer>
     </div>
 </body>
