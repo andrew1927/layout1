@@ -14,7 +14,9 @@ header,
 .flex-container,
 .experience,
 .contact,
-footer{
+footer,
+footer ul,
+footer .flex-container {
     display: flex;
 }
 header,
@@ -46,19 +48,19 @@ header {
     top: 45px;
 }
 .logo {
+    left: 108px;
     width: 19px;
     height: 25px;
     background-image: url("../images/logo.png");
     background-size: 19px 26px;
-    left: 108px;
 }
 .menu {
+    right: 108px;
     width: 30px;
     height: 30px;
     border: 2px solid #d2d3d8;
     background: url("../images/btn-bg.png") no-repeat center transparent;
     background-size: 15px 15px;
-    right: 108px;
 }
 .initials-container {
     width: 274px;
@@ -66,16 +68,16 @@ header {
 }
 .initials-container h1 {
     padding: 8px 0;
-    font: 900 33px Raleway;
-    letter-spacing: 5px;
-    text-align: center;
-    color: #fff;
     border-top: 2px solid #99b4be;
     border-bottom: 2px solid #99b4be;
+    color: #fff;
+    font: 900 33px Raleway;
+    text-align: center;
+    letter-spacing: 5px;
 }
 .initials-container span {
+    color: #ced8dd;
     font: 400 12px Roboto;
-    color: #ced8dd
 }
 .span-container {
     justify-content: space-between;
@@ -108,23 +110,23 @@ header {
 }
 .about .hire-me,
 .contact .hire-me {
-    border: none;
     width: 102px;
     height: 23px;
-    font: 500 8px Roboto;
-    color: #fff;
-    background-color: #ff2b4a;
+    border: none;
     margin-top: 29px;
+    background-color: #ff2b4a;
+    color: #fff;
+    font: 500 8px Roboto;
 }
     /*process*/
 .process {
-    font: 700 8px Raleway;
     height: 334px;
     background-color: #f6f6f6;
+    font: 700 8px Raleway;
 }
 .process h2 {
-    text-align: center;
     font: 700 20px Raleway;
+    text-align: center;
 }
 .process .flex-container {
     margin-top: 30px;
@@ -133,16 +135,16 @@ header {
     width: 142px;
     height: 135px;
     border: none;
-    text-transform: uppercase;
-    color: #fff;
     background-repeat: no-repeat;
     background-position: center 50px;
     background-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
 }
 .process p {
+    margin-top: 15px;
     font: 500 8px Roboto;
     text-align: center;
-    margin-top: 15px;
 }
 .design {
     background-image: url("../images/design-bg.png");
@@ -162,8 +164,8 @@ header {
 }
 .process div > span {
     display: block;
-    text-align: center;
     margin-top: 85px;
+    text-align: center;
 }
 /*experience*/
 .experience {
@@ -178,64 +180,64 @@ header {
 .work,
 .education {
     box-sizing: border-box;
-    padding: 30px 20px 0;
     width: 288px;
     height: 272px;
+    padding: 30px 20px 0;
     background-image: url("../images/work-bg.png");
     background-size: cover;
-    font: 400 8px Roboto;
     color: #aab2be;
+    font: 400 8px Roboto;
 }
 .experience h3 {
+    color: #fff;
     font: 700 13px Raleway;
     text-transform: uppercase;
-    color: #fff;
 }
 .experience p:nth-of-type(1),
 .experience p:nth-of-type(4){
-    font: 700 9px Roboto;
-    color: #f2f2f4;
     margin-top: 15px;
+    color: #f2f2f4;
+    font: 700 9px Roboto;
 }
 .experience p:nth-of-type(1){
     margin-top: 25px;
 }
 .experience p:nth-of-type(2),
 .experience p:nth-of-type(5){
-    font-weight: 500;
-    color: #d6d8dd;
     margin-top: 8px;
+    color: #d6d8dd;
+    font-weight: 500;
 }
 .experience p:nth-of-type(3),
 .experience p:nth-of-type(6) {
     margin-top: 6px;
 }
 .experience p:nth-of-type(3) {
-    padding-bottom: 16px;
     border-bottom:1px solid #aab2be;
+    padding-bottom: 16px;
 }
 /*works*/
 .works {
-    padding-top: 55px;
-    text-align: center;
     height: 474px;
+    padding-top: 55px;
     background-color: #fff;
+    text-align: center;
 }
 .works h2 {
     font: 700 20px Raleway;
 }
 .works p {
-    font: 500 8px Roboto;
-    color: #737373;
     margin-top: 25px;
+    color: #737373;
+    font: 500 8px Roboto;
 }
 .works .flex-container {
-    margin-top: 20px;
-    background-color: #f1f1f1;
-    width: auto;
-    height: 275px;
     flex-flow: row wrap;
     align-content: space-between;
+    width: auto;
+    height: 275px;
+    margin-top: 20px;
+    background-color: #f1f1f1;
 }
 .works div {
     width: 140px;
@@ -274,79 +276,79 @@ header {
     background-size: 30px;
 }
 .clients-quote p:nth-child(2) {
-    font: 400 8px/15px Roboto;
     width: 233px;
-    color: #234642;
     margin-top: 18px;
+    color: #234642;
+    font: 400 8px/15px Roboto;
 }
 .clients-quote .signature {
     width: 85px;
     height: 33px;
+    margin-top: 21px;
     background: url("../images/signature-bg.png") no-repeat;
     background-size: 85px;
-    margin-top: 21px;
 }
 .clients-quote p:nth-child(4) {
     margin-top: 14px;
-    font: 700 9px Roboto;
     color: #2d5b56;
+    font: 700 9px Roboto;
 }
 .clients-quote p:nth-child(5) {
     margin-top: 7px;
-    font-size: 7px;
     color: #2d5b56;
+    font-size: 7px;
 }
 /*contact*/
 .contact {
-    font: 400 8px/15px Roboto;
-    color: #d4d7dc;
     height: 489px;
     background: url("../images/header-bg.png");
     background-size: cover;
+    color: #d4d7dc;
+    font: 400 8px/15px Roboto;
 }
 .contact .flex-container {
-    height: 365px;
-    width: 586px;
     flex-flow: column wrap;
     align-content: space-between;
+    width: 586px;
+    height: 365px;
 }
 .contact .flex-container div {
-    padding: 28px 20px 0;
     box-sizing: border-box;
-    background-image: url("../images/work-bg.png");
-    background-size: cover;
     height: 115px;
     width: 288px;
+    padding: 28px 20px 0;
+    background-image: url("../images/work-bg.png");
+    background-size: cover;
 }
 .contact .flex-container .message {
     height: 365px;
 }
 .contact h3 {
-    font: 700 13px Raleway;
     color: #fff;
     text-transform: uppercase;
+    font: 700 13px Raleway;
 }
 .contact input,
 .contact textarea {
-    padding-left: 7px;
-    border: 1px solid #c2c1cb;
-    background: transparent;
     box-sizing: border-box;
     width: 247px;
+    border: 1px solid #c2c1cb;
+    padding-left: 7px;
+    background: transparent;
+    color: #c2c1cb;
     font: 400 8px Roboto;
-    color: #c2c1cb
 }
 .contact input:first-child {
     margin-top: 30px;
 }
 .contact input {
-    margin-top: 14px;
     height: 25px;
+    margin-top: 14px;
 }
 .contact textarea {
+    height: 103px;
     margin-top: 13px;
     padding-top: 8px;
-    height: 103px;
 }
 .contact .hire-me {
     margin: 13px 0 0 146px;
@@ -356,39 +358,44 @@ header {
 }
 /*footer*/
 footer {
-    font: 400 6px Roboto;
-    text-align: center;
-    color: #8b8b8b;
     height: 86px;
     background: #222;
+    color: #8b8b8b;
+    font: 400 6px Roboto;
+    text-align: center;
+}
+footer .flex-container {
+    flex-flow: column wrap;
+}
+footer ul {
+    margin: 0 auto;
 }
 footer li {
-    box-sizing: content-box;
-    background-color: transparent;
+    width: 6px;
+    height: 6px;
+    padding: 0px 5px;
     background-repeat: no-repeat;
-    background-size: 10px;
-    background-position: bottom;
-    border: none;
-    width: 10px;
-    height: 10px;
-    padding: 0 5px;
+    background-size: 6px 6px;
+    background-position: center;
 }
-footer .container li:first-child {
+footer li:first-child {
+    border-right: 1px solid #8b8b8b;
     background-image: url("../images/tw-bg.png");
-    border-right: 1px solid #8b8b8b;
 }
-footer .container li:nth-child(2) {
+footer li:nth-child(2) {
+    border-right: 1px solid #8b8b8b;
     background-image: url("../images/in-bg.png");
-    border-right: 1px solid #8b8b8b;
 }
-footer .container li:nth-child(3) {
+footer li:nth-child(3) {
+    width: 9px;
+    border-right: 1px solid #8b8b8b;
+    background-size: 9px 6px;
     background-image: url("../images/be-bg.png");
-    border-right: 1px solid #8b8b8b;
 }
-footer .container li:nth-child(4){
+footer li:nth-child(4){
     background-image: url("../images/al-bg.png");
 }
 footer p {
-    margin-top: 10px;
+    margin-top: 12px;
 }
 
